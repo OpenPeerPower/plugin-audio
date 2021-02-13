@@ -1,5 +1,5 @@
 #!/bin/sh
-# Source: https://github.com/LibreELEC/LibreELEC.tv/blob/master/packages/audio/alsa-utils/scripts/soundconfig
+# Source: https://github.com/LibreELEC/LibreELEC.tv/blob/main/packages/audio/alsa-utils/scripts/soundconfig
 
 # SPDX-License-Identifier: GPL-2.0-or-later
 # Copyright (C) 2009-2014 Stephan Raue (stephan@openelec.tv)
@@ -55,7 +55,7 @@ mixer $card DAC 100%
 mixer $card DAC,0 100%
 mixer $card DAC,1 100%
 
-# some notebooks use headphone instead of master
+# some notebooks use headphone instead of main
 mixer $card Headphone 100%
 mixer $card Speaker 100%
 mixer $card 'Internal Speaker' 0% mute
